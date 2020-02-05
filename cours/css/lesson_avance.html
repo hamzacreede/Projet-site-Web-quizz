@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Lesson1 CSS </title>
+            <link rel="stylesheet" href="css/html_debutant.css">
+          <link rel="stylesheet" href="css/css2.css">
+             <link rel="stylesheet" href="../../css/footer.css">
+	       <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
+    </head>
+
+<body>
+
+     <header>
+         
+                 <span class="ESchool">   
+                <strong>E</strong>-<span>School</span><span style="color: #4caf50">.com</span>
+                </span>
+         <span style="font-size: 25px;float: right;letter-spacing: 7px;margin-top: 20px;">L'ETS GO TO BE A DEVELOPPER</span>
+            <div class="navbar">      
+
+                     
+
+                    <ul>
+                        <li><a href="../../index.html" class="dropdown-item">HOME</a></li>
+                        <li> <a href="../html/html.html">HTML</a>
+                        </li>
+                    
+                        
+                       <li> <a href="../css/CSS.html"> CSS </a> 
+                          </li>
+
+                       <li> <a href="../javascript/javascript.html"> JAVASCRIPT </a>
+                           </li>
+
+                       <li> <a href="../php/php.html">PHP</a> </li>
+
+                        <li> <a href="#">COOMING SOON</a>   
+                        </li>
+                            
+                        
+                    </ul>
+
+              </div>
+
+     </header>
+
+     <div class="content"  style="background-color: #a9a9a921;margin-top: 0 ">
+         <section style="margin-top: 4%">
+
+        <article>
+            <div id="chapo">
+<p><strong>Une feuille de style CSS externe</strong> peut se faire avec le simple bloc-note, et il est d'usage de lui faire porter l'extension <code>.css</code> (<code>style.css</code> par exemple). On la liera ensuite à la page html à l'aide d'un <code>link</code> placé dans l'en-tête de la page (<em>pas de panique&nbsp;! <a href="#record">la méthode est expliquée en dessous</a></em>).<br />
+Mais on peut aussi déclarer les styles dans l'en-tête de la page, ou au sein des <a href="balises-html.php">balises</a> elles-mêmes. Cela peut-être intéressant pour appliquer des styles spécifiques et ils auront un ordre de priorité plus important. C'est ce qu'on appelle la "<a href="#cascade">cascade</a>".</p>
+<p><strong>Partons donc à la découverte d'une première feuille de style...</strong></p>
+</div> 
+                    
+    
+                    
+            <h2>Feuille de style CSS de base</h2>                        
+      
+<h3 id="struct">Structure de base</h3>
+<p>Pour chaque déclaration, la structure est toujours la même&nbsp;:</p>
+<pre>
+sélecteur {
+propriété: valeur;
+}
+</pre>
+<ul>
+<li>Le sélecteur, c'est la balise (X)HTML(<code>body</code> ; <code>h1</code> ; <code>p</code>, etc.), l'identifiant (<code>id</code>) ou la classe (<code>class</code>)&nbsp;;</li>
+<li>La propriété, c'est l'attribut qu'on veut appliquer (<code>font</code> ; <code>background</code> ; <code>margin</code> ; etc.)&nbsp;</li>
+<li>Et enfin la valeur qui précise les caractéristiques de la propriété</li>
+</ul>
+                    
+                    
+<h3 id="feuille">Exemple de feuille de style</h3>
+                    
+	<div class="e1">
+	<p>Fonctionne avec&nbsp;:</p>
+	<ul> 
+		<li>Tous les navigateurs graphiques</li>
+	</ul>
+	<p>Propriétés utilisées&nbsp;:</p>
+	<ul>
+		<li>background-color</li>
+		<li>color</li>
+		<li>font-family ; font-size</li>
+		<li>padding</li>
+		<li>text-align ; text-decoration </li>
+	</ul>
+	</div>
+
+<p>Cet exemple de feuille de style (encore une fois, de base) donnera une page&nbsp;:</p>
+<ul>
+<li>à fond blanc,</li>
+<li>avec une police de caractère par défaut Verdana noire,</li>
+<li>un titre de premier niveau <span style="color:navy">bleu marine</span> centré,</li>
+<li>un titre de deuxième niveau <span style="color:red">rouge</span> décalé de 15 pixels,</li>
+<li>des liens passant du <span style="color:green; text-decoration:underline">vert</span> au <span style="color:gray; text-decoration:underline">gris</span> avec un petit effet <span style="color:red;">rouge non souligné</span> au passage de la souris.</li>
+</ul>
+
+<p>A noter que les couleur sont ici sous la forme "white, black, blue" etc... pour plus de lisibilité mais qu'il convient plutôt d'utiliser les valeurs hexadécimales qui vont de <code>#000000</code> (noir) à <code>#ffffff</code> (blanc)</p>
+
+<p>Les tailles des <a href="font-css-polices-caracteres.php" title="tutoriel sur la mise en forme d'un texte">polices de caractère</a> sont ici exprimées en <code>%</code>, mais on peut aussi utiliser <code>em</code> qui est aussi une unité de longueur relative à privilégier (pour des raisons d'homogénéité d'affichage et d'accessibilité) aux unités absolues telles que les <code><acronym title="point">pt</acronym></code> ou les <code><acronym title="picas">pc</acronym></code>.<br />
+À noter que bien que les <code><acronym title="pixels">px</acronym></code> soient une unité relative, ils sont aussi à éviter car <abbr title="Microsoft Internet Explorer">MSIE</abbr> les interprète comme unité absolue...</p>
+
+<p>Pour que les couleurs des <a href="rollover-pseudo-classe-css-hover.php" title="tutoriel sur les effets de rollover">liens changent selon leur état</a> (non visité, visité, survolé, actif, ayant le focus), on utilise des <strong>pseudo-classes</strong> qui se déclarent par <code>:link</code>, <code>:visited</code>, <code>:hover</code>, <code>:active</code> et <code>:focus</code>. Il est important de respecter cet ordre de déclarations.</p> 
+
+<p>On commence une feuille de style en général par un "reset" pour mettre toutes les marges à zéro (intérieures <code>padding</code> et extérieures <code>margin</code>). Cela doit permettre d'avoir tous les navigateurs avec, à peu près, le même état de départ...</p>
+
+<h4>Code CSS</h4>
+<pre>
+html, body {
+ margin: 0;
+ padding: 0;
+ }
+body {
+ background-color: white; 
+ font-family: Verdana, sans-serif; 
+ font-size: 100%;
+ }
+h1 {
+ font-size: 200%; 
+ color: navy; 
+ text-align: center;
+ }
+h2 {
+ font-size: 150%; 
+ color: red; 
+ padding-left: 15px;
+ }
+p,ul,li,td {
+ color: black; 
+ }
+a:link {
+ color: green;
+ text-decoration: underline;
+ }
+a:visited {
+ color: gray;
+ }
+a:hover {
+ color: red;
+ text-decoration: none;
+}
+a:active, a:focus {
+ color: red;
+}
+</pre>
+<h4>Code (X)HTML</h4>
+<pre>
+&lt;h1&gt;Titre principal&lt;/h1&gt;
+
+&lt;h2&gt;Sous titre&lt;/h2&gt;
+
+&lt;p&gt;
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+Duis eget ligula quis libero mollis dapibus.
+Suspendisse potenti. Nullam facilisis neque et sem. 
+Proin placerat adipiscing urna. Aenean sollicitudin. 
+Mauris lorem erat, fringilla quis, sagittis a, varius sed, nunc. 
+Pellentesque ligula. Nullam egestas eleifend turpis. Vivamus ac
+sapien. Sed venenatis, ligula ut scelerisque vehicula, 
+erat tellus euismod ipsum, eget faucibus tortor arcu et lectus.
+Vivamus vel purus. Fusce dignissim tortor quis diam elementum fermentum. 
+Mauris eleifend lorem vel arcu. Vivamus tempus
+faucibus lectus. Curabitur volutpat ornare mi. 
+Curabitur ac libero. Sed eu elit ac metus egestas iaculis.
+&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li>Item 1&lt;/li&gt;
+  &lt;li>Item 2&lt;/li&gt;
+  &lt;li>Item 3&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;a href="http://css.mammoutland.net/"&gt;css.mammoutland.net/&lt;/a>&lt;/p&gt;
+</pre>
+<p class="voir"><a href="rendu-de-la-css-de-base.html">Voir le résultat</a></p>
+<p class="haut"><a href="#">Haut</a></p>
+ <h3 id="cascade">Notion de cascades</h3>
+ <p>Pourquoi parle-t'on de "feuilles de style en cascade" (Cascading Style Sheets)&nbsp;? La raison est très simple&nbsp;: on peut déclarer les styles à différents endroits, et selon ces endroits ils seront plus ou moins prioritaires. On obtient donc une cascade de styles.</p>
+<ol>
+<li>Déclaration des styles dans une <strong>feuille de style externe</strong>&nbsp;: c'est de loin la meilleure chose à faire et la plus pratique à maintenir (<a href="http://css.mammouthland.net/">cf le schéma de la page d'accueil</a>), mais c'est celle qui a le moins de poids</li>
+<li>Déclaration des <strong>styles en interne</strong>, dans l'en-tête de la page&nbsp;: à ne faire qu'avec des styles particuliers à une page. Les styles déclarés auront plus de poids que ceux de la feuille de style externe et donc l'emporteront en cas de conflits.</li>
+<li>Déclaration des <strong>styles en attributs des éléments html</strong>&nbsp;: à faire pour des mises en forme ponctuelles. Ces styles l'emporteront sur tous les autres.</li>
+</ol>
+<p>... Il y a une 4<sup>ème</sup> possibilité, mais celle-ci est indépendante de la volonté du webmestre&nbsp;: ce sont les styles définis par l'utilisateur, s'il jamais il en déclare. Ils seront interprétés en priorité, et masqueront tous les autres.</p> 
+<p class="haut"><a href="#">Haut</a></p>
+<h3 id="record">Enregistrement d'une feuille de style</h3>
+<p>Il existe donc trois façons d'enregistrer les styles&nbsp;:</p>
+<ol id="chap">
+    
+ <li style="color:#DF3F3F"><a href="#externe" style="color:#DF3F3F">dans une feuille de style externe</a></li>
+ <li style="color:#DF3F3F"><a href="#interne" style="color:#DF3F3F">dans une feuille de style interne</a></li>
+ <li style="color:#DF3F3F"><a href="#inline" style="color:#DF3F3F">dans le code au sein des balises html</a></li>
+</ol>
+                    
+<h4 >1. Feuille de style externe</h4>
+ <p>Enregistrer le code CSS dans un fichier s'appelant (par exemple) "style.css", et mettre dans l'en-tête de la page html (entre les balises <code>&lt;head&gt;&lt;/head&gt;</code>)&nbsp;:</p>
+<pre>
+&lt;link href="style.css" rel="stylesheet" media="all" type="text/css"&gt; 
+</pre>
+  <p class="astuce">Avec un <a href="http://css.mammouthland.net/balises-html.php#xhtml">doctype HTML 5</a> l'attribut <code>type</code> est inutile.</p>
+  <p>Si vous désirez générer simplement une feuille de style un peu plus fournie, un <a href="genecss.php">générateur de feuille de style est à disposition</a>.</p>
+<h5 class="astuce"> Note à propos du média</h5>
+<p>Il est précisé <code>media="all"</code> dans les attributs de la déclaration de la feuille de style. Cela indique que cette feuille ne sera lisible par tous les types de médias (écrans, TV, imprimante...). Pour une feuille de style lisible seulement avec des écrans, on spécifiera <code>media="screen"</code>, pour une feuille de style réservée à l'impression, ce sera <code>media="print"</code>.<br />Pour plus de détails sur tous les médias déclarables, consultez ces <a href="http://www.yoyodesign.org/doc/w3c/css2/media.html#media-types">spécifications CSS 2.1 sur les types de médias reconnus</a>.</p>
+<h4 id="interne">2. Feuille de style interne</h4>
+<p>Pour déclarer des styles qui ne s'appliqueront qu'à la page considérée, les styles sont à déclarer entre les balises suivantes&nbsp;:</p>
+<pre>
+&lt;style type="text/css" media="screen"&gt;
+....
+&lt;/style&gt;
+</pre>
+<p>Tout ceci est à placer, comme précédemment, entre les balises <code>&lt;head&gt;&lt;/head&gt;</code>.</p>
+<h4 id="inline">3. Styles CSS dans le code html ("<span lang="en">inline</span>")</h4>
+<p>De façon encore plus ponctuelle, si l'on veut attribuer un style à un seul endroit, on peut déclarer le style à l'intérieur d'une balise html à l'aide de l'attribut <code>style</code>. Par exemple&nbsp;:</p>
+<pre>
+&lt;p <strong>style="text-align:center; color:red"</strong>&gt;
+ <span>lorem ipsum</span>
+&lt;/p&gt;
+</pre>
+  
+                     <a href="avance_css.html"><button class="button button1" style="margin-left: 45%">Retour</button></a>
+
+                    
+</article>
+
+                
+         </section>
+
+
+    </div>
+    
+    <footer class="footer-d">
+
+			<div class="footer-left">
+
+				<h3>E-<span>School</span></h3>
+
+				<p class="footer-links">
+					<a href="#">Home</a>
+					.
+					<a href="#">Contact</a>
+					·
+					<a href="#">About</a>
+				</p>
+
+				<p class="footer-company-name">E-School &copy; 2018</p>
+			</div>
+
+			<div class="footer-center">
+
+				<div>
+					<i class="fa fa-map-marker"></i>
+					<p><span>Universite Houari Boumediane</span> Babezouar, Alger</p>
+				</div>
+
+				<div>
+					<i class="fa fa-phone"></i>
+					<p>+213 555 123456 / +213 555 123456</p>
+				</div>
+
+				<div>
+					<i class="fa fa-envelope"></i>
+					<p><a href="mailto:support@company.com">E-School@gmail.com</a></p>
+				</div>
+
+			</div>
+
+			<div class="footer-right">
+
+				<p class="footer-company-about">
+					<span>About the company</span>
+					E-School est site d'apprentissage 
+				</p>
+
+				<div class="footer-icons">
+
+					<a href="#"><i class="fa fa-facebook"></i></a>
+					<a href="#"><i class="fa fa-twitter"></i></a>
+					<a href="#"><i class="fa fa-google"></i></a>
+					<a href="#"><i class="fa fa-youtube"></i></a>
+
+				</div>
+
+			</div>
+
+		</footer>
+          
+</body>
+
+</html>

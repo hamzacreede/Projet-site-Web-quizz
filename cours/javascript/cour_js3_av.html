@@ -1,0 +1,256 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+
+    <meta charset="utf-8">
+
+    <title>javascript - Avancée </title>
+
+    <link rel="stylesheet" href="css/debutant_css.css">
+        <link rel="stylesheet" href="css/button.css">
+   
+    <link rel="stylesheet" href="css/html_debutant.css">
+    
+             <link rel="stylesheet" href="../../css/footer.css">
+	       <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
+
+    <style>
+        body{
+            
+            font-family: cursive;
+            
+            
+        }
+        
+        
+        
+        
+         .card {
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  width: 40%;
+           border-radius: 15px;
+           display: inline-block;
+}
+
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    
+}
+        .card h1{
+            text-align: center; 
+        }
+        
+        
+          section article p {
+            background-color: white;
+            border-radius: 10px;
+            padding: 10px;
+            font-size: 18;  
+             font-family: cursive; 
+              
+        }
+        
+        
+        
+            section article p ul {
+            background-color: crimson;
+            border-radius: 10px;
+            padding: 10px;
+            font-size: 18;  
+             font-family: cursive; 
+              
+        }
+        
+          
+        titre{
+            font-size: 20px;
+            color: crimson;
+        
+            
+            
+        }
+        
+        
+        span {
+             color: #4caf50;
+        }
+        h2{
+            margin-top: 10%;
+            margin-left: 20%;
+        }
+     </style>
+
+</head>
+
+<body style="background-color: #a9a9a921;margin-top: 0 ">
+
+     <header style="background-color: white">
+         
+                 <span class="ESchool">   
+                <strong>E</strong>-<span>School</span><span style="color: #4caf50">.com</span>
+                </span>
+         <span style="font-size: 25px;float: right;letter-spacing: 7px;margin-top: 20px;">L'ETS GO TO BE A DEVELOPPER</span>
+               <div class="navbar">      
+
+                     
+
+                    <ul>
+                        <li><a href="../../index.html" class="dropdown-item">HOME</a></li>
+                        <li> <a href="../html/html.html">HTML</a>
+                        </li>
+                    
+                        
+                       <li> <a href="../css/CSS.html"> CSS </a> 
+                          </li>
+
+                       <li> <a href="../javascript/javascript.html"> JAVASCRIPT </a>
+                           </li>
+
+                       <li> <a href="../php/php.html">PHP</a> </li>
+
+                        <li> <a href="#">COOMING SOON</a>   
+                        </li>
+                            
+                        
+                    </ul>
+
+              </div>
+
+     </header>
+
+     <div class="content" style="margin-top: 0px">
+       
+          <section style="margin-left: 10%">
+
+                <article>
+                    <a href="#" style="color: #4caf50;margin-top: 10px;"><h3 style="font-size: 50px;">Apprendre javascript</h3>
+                    </a>
+          <h3 style="color: rgb(4, 0, 255)">  notion avancé</h3>
+                    
+<titre><u>GESTION DU DELAI D’EXECUTION EN JAVASCRIPT</u></titre>
+                    
+                    
+                    
+                    
+                    
+                  <h4>Délai et animations</h4>
+                
+Le JavaScript nous permet d’exécuter des blocs de code à un certain moment donné ou à répétition avec un intervalle de temps fixe entre chaque répétition.
+
+Cela peut être très utile pour créer des animations (horloge, slider, etc.) entre autres.
+
+Pour gérer le délai d’exécution d’un code, nous allons utiliser les méthodes setInterval() et setTimeout().  
+                    
+                    
+                    
+                  
+  <titre><u> La méthode setInterval()</u></titre>                  
+   <p> 
+La méthode setInterval() est une méthode de l’objet Window.
+
+Elle va nous permettre d’exécuter un script en boucle en précisant un intervalle de temps entre chaque répétition.
+
+Cette méthode va prendre en arguments le bloc de code à exécuter en boucle et l’intervalle entre chaque exécution exprimé en millisecondes.
+</p>
+                    <span>
+On va par exemple simplement pouvoir créer un timer pour notre site avec l’heure qui va se mettre à jour automatiquement toutes les secondes :               
+ </span>                   
+ 
+                    
+                                                              <br><br>
+                    
+<img src="css/methode-setinterval-javascript.png" style="margin-left: 20%">  
+                    
+                    
+     <br><br>    
+                    
+    <img src="css/utilisation-methode-setinterval-javascript.png" style="margin-left: 20%">                  
+                        <br><br>  
+    <span>               
+     Dans l’exemple ci-dessus, on crée une fonction horloge qui va récupérer l’heure actuelle dans un objet de type Date et l’afficher en HTML.
+
+La méthode toLocaleTimeString() nous permet de récupérer l’heure correspondant à notre faisceau horaire, c’est-à-dire l’heure française dans mon cas.
+
+Ensuite, on utilise setInterval() pour exécuter notre fonction horloge toutes les secondes, et ainsi récupérer et afficher la date actuelle.
+
+Notez que nous créons également une variable tempsReel qui ne nous sert pas pour le moment mais qui va nous être utile par la suite pour manipuler notre code.               
+                    
+  </span>                   
+                    
+    <br><br>
+                    
+                    
+       <titre><u>      Stopper une exécution avec clearInterval()</u></titre>                 
+                    
+            <p>
+La méthode clearInterval() va nous permettre d’arrêter l’exécution d’une fonction passée à la méthode setInterval().
+
+Pour que clearInterval() fonctionne, il va cependant falloir lui passer une variable contenant la méthode setInterval().
+
+Cette variable doit être globale. C’est pour cela que nous avons créé la variable tempsReel dans l’exemple précédent dans l’espace global de notre script.
+      </p>              
+                    
+   
+ <img src="css/methode-clearinterval-javascript.png" style="margin-left: 20%">  
+                    
+                    
+     <br><br>    
+                    
+    <img src="css/utilisation-methode-clearinterval-javascript.png" style="margin-left: 20%">                  
+                        <br><br>                     
+                    
+           
+      <titre><u>La méthode setTimeout()</u></titre>                   
+ 
+                    <p>
+La méthode setTimeout() va nous permettre d’exécuter un bloc de code après un certain moment donné.
+
+Cette méthode appartient également à l’objet implicite Window.
+
+Il va falloir passer deux arguments à cette méthode : une fonction à exécuter et un nombre en millisecondes précisant à quel moment exécuter la fonction à partir de l’exécution de setTimeout().                
+                    
+   </p>                 
+                    
+                       
+    <img src="css/methode-settimeout-javascript.png" style="margin-left: 20%">                  
+                        <br><br>                 
+    <span>
+                    
+                    
+                    
+      Ici, on utilise plusieurs fois setTimeout() pour modifier la couleur de l’arrière plan de notre page dès qu’un utilisateur clique sur notre bouton.
+
+On passe une fonction anonyme à setTimeout() dont le rôle est simplement de changer la couleur de fond de l’élément body.
+
+En deuxième argument, on précise quand notre fonction anonyme doit être exécutée à partir du clic sur le bouton.
+
+Voici comment se déroule l’action dans son ensemble : un utilisateur arrive sur la page, et clique sur le bouton. Dès que le bouton est cliqué, notre fonction couleur() est exécutée et ainsi les différents appels à setTimeout() sont lancés à la suite selon le délai qu’on leur a attribué.
+
+Pour stopper l’exécution de setTimeout(), on peut cette fois ci utiliser la méthode clearTimeout(). Cette méthode va également avoir besoin d’une variable globale si vous comptez l’utiliser.
+
+Cependant, les cas où l’on va avoir besoin d’arrêter l’exécution de setTimeout() vont être très rares.                    
+                    
+                    
+                    </span>                
+                    
+                    
+              <br><br>  
+                     <a href="cour_js2.html"><button class="button button1">Leçon 2</button></a>
+                  
+                      <a href="javascript.html"><button class="button button2">Accueil</button></a>  
+                   
+                    
+             
+         </article>
+
+
+    </section>
+    
+    </div>
+          
+</body>
+
+
+</html>

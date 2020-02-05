@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <meta charset="utf-8">
+
+    <title>html - débutant </title>
+
+    <link rel="stylesheet" href="css/html_debutant.css">
+
+    <style>
+
+       
+     </style>
+
+</head>
+
+<body>
+
+     <header>
+          
+            <div class="navbar">      
+
+                     
+
+                    <ul>
+
+                       <li style="float: left ; color: white ; margin-top: 3px ;font-size: 30px">
+                           
+                        <strong style="color: palegreen">E</strong>-<span style="color: red">school</span> 
+                    
+                        </li>
+
+                         
+                       <li> <a href="#">welcome</a> </li>
+                        
+                       <li> <a href="#"> presentation </a> </li>
+
+                       <li> <a href="#"> cours </a> </li>
+
+                       <li> <a href="#">quiz</a> </li>
+
+                       <li> <a href="#">footer</a> </li>
+
+                    </ul>
+
+              </div>
+
+     </header>
+
+     <div class="content">
+
+        <!-- Liste des cours -->
+
+           <nav>
+       
+              <ul>
+    
+                        <li><a href="../html/debutant.html" class="active">html</a></li>
+    
+                        <li><a href="../css/debutant.html" >css</a></li>
+            
+                        <li><a href="../php/debutant.html">PHP</a></li>
+            
+                        <li><a href="../javascript/debutant.html">javascript</a></li>
+        
+              </ul>
+          
+          
+           </nav>
+
+      
+           <section>
+
+                <article>
+
+                        <h2 style="color: red"><strong style="background-color: rgb(175, 70, 38);color: white">* Html 5 *</strong>  pour débutant</h2>
+                    <div> 
+                    <img src="css/html.jpg" width="700px" height="200px">
+                    </div>
+                        
+                    <h3 style="color: rgb(4, 0, 255)">Présentation du cours</h3>
+                        
+                    <p>Bienvenue a ce cours gratuit d'initialtion a HTML.
+                    Dans ce chapitre, nous allons commencer à pratiquer ! Nous allons découvrir les bases du langage HTML(les balises,structure de la page...etc) et comprendre les different principe de base                      
+                    </p>
+                    <hr>
+                      <h3 style="color: rgb(4, 0, 255)">Objectif</h3>
+                    
+                    <p>
+                    1- Créer des pages statiques (textes, images, tableaux, formulaires,…)<br> 
+                    2- Décorer vos pages (police du texte, couleurs, style,…) <br>
+                    3- Initilisation aux page dynamiques    
+                    
+                    </p>
+                    <hr>
+                    <h3 style="color: rgb(4, 0, 255)">Quelque definition:</h3>
+                  <dl>
+                    <dt style="background:red "><b>HTML:</b></dt>
+                    <dd> un langage de balisage est un langage permettant de structurer (ranger) ou mettre en forme (présenter) des données en les organisant à l'aide de balises. Le langage de balisage le plus connu est sans doute le HTML qui sert à construire les pages Web.</dd>  
+              
+                    <dt style="background: yellow"><b>Page statique:</b></dt>
+                    <dd>sont conçus uniquement avec  les langages HTML et CSS. Vous pouvez  leur donner l’apparence que vous      voulez , mais le problème  c’est que ces sites web ne changent      pas, ils sont globalement tout le temps les mêmes.</dd>
+                    <dt style="background: blue"><b>Page Dynamique:</b></dt>
+                    <dd>La page dynamique permet de présenter les informations de différentes Manières selon l’interaction avec le visiteur La page dynamique est alors construite au fur et à mesure grâce à une Programmation  conçue par l’Administrateur du site </dd>                    
+                    </dl>
+                    <h3 style="color: rgb(4, 0, 255)">Rappel de Quelques données théoriques sur html associé à Css</h3> 
+                    <p>
+                           Le design d'un site web évolue toujours au fil du temps. Le problème, lorsqu'on n'utilise pas de feuilles de style,
+                            
+                           c'est qu'il faut reprendre toutes les pages une à une pour modifier une police de caractère ou une couleur de fond. 
+                          
+                           Avec les "Cascading Style Sheet" (CSS), ce lourd handicap est résolu. C'est dans la feuille de style que l'on va
+                           
+                           déclarer toute la mise en forme des pages:la couleur de fond, les polices de caractère, 
+                           
+                           leurs couleurs, etc. Celle-ci sera liée à chaque page html. Ainsi, lorsqu'on en modifiera un élément,
+                           
+                           cela se répercutera immédiatement sur toutes les pages web. Css est donc puissant et pratique. Mais cela ne s'arrête pas là. 
+                           
+                           Outre les couleurs et les polices, on peut aussi changer radicalement l'apparence d'un site en abandonnant la mise en page à 
+                           
+                           l'aide de tableaux. Soyons clair :<strong> un tableau sert à présenter des données tabulaires.</strong> Pour une mise en page souple et cohérente, on utilisera des "blocs" (appelés aussi "boites" ou "calques"), qui ont l'avantage de pouvoir être déplacés de gauche à droite, ou de haut en bas grâce aux CSS.
+
+                    </p>
+
+                           
+                    <p>
+                                
+                           Et ce n'est pas plus difficile que d'utiliser des tableaux contrairement à ce que certains de mauvaise foi
+                        
+                           voudraient bien faire croire! Cela dit, même si on utilise un logiciel wysiwyg tel que Dreamweaver, 
+                           
+                           il convient tout de même de connaître quelques balises html, car ce sont celles-ci qui vont être indiquées 
+                           
+                           dans la feuille de style. </p> 
+                     <hr>
+
+                     <ul>
+                     <h2 style="color: rgb(4, 0, 255)">les bases de html 5:</h2> 
+                     <li> <p style="color: rgb(255, 30, 0)"> <strong> Document </strong> </p></li> 
+
+    <table id="tab">
+         <tr>
+             <td><b> &lt;!DOCTYPE html&gt;</b> </td>
+             <td> : Précise qu’il s’agit d’un document HTML 5 <b style="color: red">(obligatoire)</b></td>
+         </tr>
+             
+             
+          <tr>
+            <td><b>&lt;html&gt; &lt;/html&gt;</b> :</td>
+            <td>La racine du document  contient obligatoirement  deux fils  head et body </td>
+          </tr>
+             
+            <tr>
+            <td>  <b>&lt;body&gt; &lt;/body&gt;</b> :</td>
+            <td> corps du document </td>
+            </tr>   
+        <tr>
+            <td>  <b>&lt;!-- commentaire --&gt;</b>  :</td>
+            <td> Commentaire <b style="color: red">(optionnel)</b> </td>
+        </tr>  
+             
+           <tr>
+            <td>  <b>&lt;HEAD&gt;</b>  :</td>
+            <td>L’entête Fournit des renseignements sur la page  </td>
+           </tr> 
+             
+          <tr>
+            <td>  <b>&lt;titre &gt; &lt;/titre&gt;</b>  :</td>
+            <td> Le titre de la page <b style="color: red">(obligatoire)</b>  </td>
+           </tr>      
+          
+             <tr>
+            <td>  <b>&lt;meta  Charset=‘’UTF-8’’&gt;</b>  :</td>
+            <td> Le titre de la page <b style="color: red">(obligatoire)</b>  </td>
+           </tr>      
+                    
+         </table>                 
+         <br><br>
+         
+        <li> <p style="color: rgb(255, 30, 0)"> <strong> Decoupage d'une page </strong> </p> </li>
+           
+         <p>Voici un schéma basique d'un découpage d'une page HTML5. Précisons bien qu'il ne s'agit pas d'une règle fixe à appliquer à tout document mais juste d'un exemple.</p><br>
+       
+         <img src="css/schema2.png" style="align: center;width:500px;height:250px;" ><br>
+         
+         <b><p style="text-align: center; color: firebrick"> ***** Voici quelques balise pour une bonne structuration de la page *****</p></b>
+         <table id="tab">
+            <tr>
+             <td><b> &lt;section&gt;  &lt;/section&gt;</b> </td>
+             <td>   Section générique regroupant un même sujet, une même fonctionnalité, de préférence avec un en-tête, ou bien section d'application web  </td>
+         </tr>
+             
+             
+             <tr>
+             <td><b> &lt;article&gt;  &lt;/article&gt;</b> </td>
+             <td>     Section de contenu indépendante, pouvant être extraite individuellement du document ou syndiquée (flux RSS ou équivalent), sans pénaliser sa compréhension   </td>
+         </tr>
+                  
+        
+            
+           <tr>
+             <td><b> &lt;header&gt;  &lt;/header&gt;</b> </td>
+             <td>  Section d'introduction d'un article, d'une autre section ou du document entier (en-tête de page).   </td>
+         </tr>
+             
+             
+              <tr>
+             <td><b> &lt;nav&gt;  &lt;/nav&gt;</b> </td>
+             <td>  Section possédant des liens de navigation principaux (au sein du document ou vers d'autres pages)</td>
+              </tr>
+             
+             
+              <tr>
+             <td><b> &lt;aside&gt;  &lt;/aside&gt;</b> </td>
+             <td>  Section dont le contenu est un complément par rapport à cequi l'entoure, qui n'est pas forcément en lien direct avec le contenu mais qui peut apporter des informations supplémentaires.</td>
+              </tr>
+         
+            <tr>
+             <td><b> &lt;footer&gt;  &lt;/footer&gt;</b> </td>
+             <td>Section de conclusion d'une section ou d'un article, voire du document entier (pied de page). </td>
+              </tr>
+             
+             
+              <tr>
+             <td><b> &lt;div&gt;  &lt;/div&gt;</b> </td>
+             <td> définit une division ou une section dans un document HTML. cet élément est souvent utilisé comme conteneur pour d'autres éléments HTML afin de les styler avec CSS ou d'effectuer certaines tâches avec JavaScript.</td>
+              </tr>
+         </table>
+                         
+         <br>             
+       
+         <li> <p style="color: rgb(255, 30, 0)"> <strong> texte: </strong> </p> </li><br>
+         
+        <table id="tab">
+            
+        <tr>
+             <td><b> &lt;h1&gt; &lt;h3&gt; &lt;h3&gt;</b> </td>
+             <td>Les niveau du texte</td>
+        </tr> 
+            
+            
+        <tr>
+             <td><b> &lt;b&gt; &lt;i&gt; &lt;u&gt;</b> </td>
+             <td>texte en gras,italic,souligné</td>
+        </tr> 
+            
+        <tr>
+             <td><b> &lt;sub&gt; &lt;mark&gt; &lt;sup&gt;</b> </td>
+             <td>texte en indice, texte marqué,texte en exposant</td>
+        </tr> 
+            
+        <tr>
+             <td><b> &lt;small&gt; &lt;strong&gt; &lt;del&gt;</b> </td>
+             <td>texte petit, texte important,texte supprimé </td>
+        </tr> 
+                        
+        </table>
+         
+                        
+      <li> <p style="color: rgb(255, 30, 0)"> <strong> les listes: </strong> </p> </li><br>
+         
+        <table id="tab">
+         <tr>
+             <td><b> &lt;dl&gt; &lt;/dl&gt; </b> </td>
+             <td> la liste de définitions (conteneur) </td>
+        </tr> 
+        <tr>
+             <td><b> &lt;dt&gt; &lt;/dt&gt; </b> </td>
+             <td> Le terme à définir  ( terme de définition ) </td>
+        </tr> 
+            
+        <tr>
+             <td><b> &lt;dd&gt; &lt;/dd&gt; </b> </td>
+             <td> La définition du terme ( description de définition )</td>
+        </tr> 
+            
+            
+        <tr>
+             <td><b> &lt;ul&gt; &lt;/ul&gt; </b> </td>
+             <td> une liste a puce </td>
+        </tr>
+            
+            
+        <tr>
+             <td><b> &lt;ol&gt; &lt;/ol&gt; </b> </td>
+             <td> une liste numérotée </td>
+        </tr>
+            
+        <tr>
+             <td><b> &lt;li&gt; &lt;/li&gt; </b> </td>
+             <td> élement d'une liste </td>
+        </tr> 
+            
+             <tr>
+             <td><b> &lt;a href="" &gt; &lt;/a&gt; </b> </td>
+             <td> lien hypertexte </td>
+              </tr> 
+            
+        </table>   
+
+<li><p style="color: rgb(255, 30, 0)"> <strong>les Tableaux : </strong> </p></li>  
+<table id="tab">
+         <tr>
+             <td><b> &lt;table &gt; &lt;/table&gt; </b> </td>
+             <td> cration d'une tableau </td>
+              </tr>
+    
+    
+    <tr>
+             <td><b> &lt;th &gt; &lt;/th&gt; </b> </td>
+             <td> legende de ligne ou de colonne </td>
+              </tr>
+    
+    <tr>
+             <td><b> &lt;tr &gt; &lt;/tr&gt; </b> </td>
+             <td> ligne d'un tableau </td>
+              </tr>
+    
+    <tr>
+             <td><b> &lt;td &gt; &lt;/td&gt; </b> </td>
+             <td> colonne d'un tableau </td>
+              </tr>
+
+                        
+                        
+                        
+                        
+                        
+                        </table>
+                          
+
+
+                            <br>
+
+                            <h2 style="color: red"> <strong> </strong>  </h2>
+                         
+                        
+                            <br> <br> <br>
+                        
+                    </article>
+
+                 <aside>
+
+                        <ul>
+                         
+                                <li> <a href="debutant.html" >Niveau Débutant</a> </li>
+                                 
+                              
+         
+                                <li> <a href="avance.html" class="active"> Niveau Avancé </a> </li>                        
+         
+                        </ul>
+
+                 </aside>
+                
+         </section>
+
+
+    </div>
+          
+</body>
+
+
+</html>

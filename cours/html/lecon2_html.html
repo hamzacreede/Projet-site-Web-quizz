@@ -1,0 +1,242 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+
+    <meta charset="utf-8">
+
+    <title>html - débutant </title>
+
+    <link rel="stylesheet" href="css/debutant_css.css">
+   
+    <link rel="stylesheet" href="css/html_debutant.css">
+    
+             <link rel="stylesheet" href="../../css/footer.css">
+	       <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
+
+    <style>
+        body{
+            
+            font-family: cursive;
+            
+            
+        }
+        
+         .card {
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  width: 40%;
+           border-radius: 15px;
+           display: inline-block;
+}
+
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    
+}
+        .card h1{
+            text-align: center; 
+        }
+        
+        
+          section article p {
+            background-color: white;
+            border-radius: 10px;
+            padding: 10px;
+            font-size: 18;  
+             font-family: cursive; 
+              
+        }
+        
+        
+        span {
+             color: #4caf50;
+        }
+        h2{
+            margin-top: 10%;
+            margin-left: 20%;
+        }
+        
+        td{
+            
+            background-color: antiquewhite;
+            
+        }
+        
+     </style>
+
+</head>
+
+<body style="background-color: #a9a9a921;margin-top: 0 ">
+
+     <header style="background-color: white">
+         
+                 <span class="ESchool">   
+                <strong>E</strong>-<span>School</span><span style="color: #4caf50">.com</span>
+                </span>
+         <span style="font-size: 25px;float: right;letter-spacing: 7px;margin-top: 20px;">L'ETS GO TO BE A DEVELOPPER</span>
+                     <div class="navbar">      
+
+                     
+
+                    <ul>
+                        <li><a href="../../index.html" class="dropdown-item">HOME</a></li>
+                        <li> <a href="html.html">HTML</a>
+                        </li>
+                    
+                        
+                       <li> <a href="../css/CSS.html"> CSS </a> 
+                          </li>
+
+                       <li> <a href="../javascript/javascript.html"> JAVASCRIPT </a>
+                           </li>
+
+                       <li> <a href="../php/php.html">PHP</a> </li>
+
+                        <li> <a href="#">COOMING SOON</a>   
+                        </li>
+                            
+                        
+                    </ul>
+
+              </div>
+
+     </header>
+
+     <div class="content" style="margin-top: 0px">
+       
+          <section style="margin-top: 4%;margin-left: 10%">
+
+                <article>
+                    <a href="#" style="color: #4caf50;margin-top: 10px;"><h3 style="font-size: 50px;">Apprendre HTML</h3>
+                    </a>
+     
+                    
+                    
+               
+                     <ul>
+                     <span style="color: rgb(4, 0, 255)">voici qi=uelques points a eclairssir pour ce qui concerne la structuartion d'une page HTML</span> 
+                     <li> <p style="color: rgb(255, 30, 0)"> <strong> Document </strong> </p></li> 
+
+    <table id="tab">
+         <tr>
+             <td><b> &lt;!DOCTYPE html&gt;</b> </td>
+             <td> : Précise qu’il s’agit d’un document HTML 5 <b style="color: red">(obligatoire)</b></td>
+         </tr>
+             
+             
+          <tr>
+            <td><b>&lt;html&gt; &lt;/html&gt;</b> :</td>
+            <td>La racine du document  contient obligatoirement  deux fils  head et body </td>
+          </tr>
+             
+            <tr>
+            <td>  <b>&lt;body&gt; &lt;/body&gt;</b> :</td>
+            <td> corps du document </td>
+            </tr>   
+        <tr>
+            <td>  <b>&lt;!-- commentaire --&gt;</b>  :</td>
+            <td> Commentaire <b style="color: red">(optionnel)</b> </td>
+        </tr>  
+             
+           <tr>
+            <td>  <b>&lt;HEAD&gt;</b>  :</td>
+            <td>L’entête Fournit des renseignements sur la page  </td>
+           </tr> 
+             
+          <tr>
+            <td>  <b>&lt;titre &gt; &lt;/titre&gt;</b>  :</td>
+            <td> Le titre de la page <b style="color: red">(obligatoire)</b>  </td>
+           </tr>      
+          
+             <tr>
+            <td>  <b>&lt;meta  Charset=‘’UTF-8’’&gt;</b>  :</td>
+            <td> Le titre de la page <b style="color: red">(obligatoire)</b>  </td>
+           </tr>      
+                    
+         </table>                 
+         <br><br>
+     
+              
+          <li> <p style="color: rgb(255, 30, 0)"> <strong> Decoupage d'une page </strong> </p> </li>                
+                         
+             <p style="background-color: deeppink">Voici un schéma basique d'un découpage d'une page HTML5. Précisons bien qu'il ne s'agit pas d'une règle fixe à appliquer à tout document mais juste d'un exemple.</p><br>        
+                
+                         
+                         
+             <img src="css/schema2.png" style="align: center;width:500px;height:250px;" ><br>
+         
+         <b><p style="text-align: center; color: firebrick ;background-color: #a9a9a921"> ***** Voici quelques balise pour une bonne structuration de la page *****</p></b>             
+               
+                         
+                         
+                         
+                     <table id="tab">
+            <tr>
+             <td><b> &lt;section&gt;  &lt;/section&gt;</b> </td>
+             <td>   Section générique regroupant un même sujet, une même fonctionnalité, de préférence avec un en-tête, ou bien section d'application web  </td>
+         </tr>
+             
+             
+             <tr>
+             <td><b> &lt;article&gt;  &lt;/article&gt;</b> </td>
+             <td>     Section de contenu indépendante, pouvant être extraite individuellement du document ou syndiquée (flux RSS ou équivalent), sans pénaliser sa compréhension   </td>
+         </tr>
+                  
+        
+            
+           <tr>
+             <td><b> &lt;header&gt;  &lt;/header&gt;</b> </td>
+             <td>  Section d'introduction d'un article, d'une autre section ou du document entier (en-tête de page).   </td>
+         </tr>
+             
+             
+              <tr>
+             <td><b> &lt;nav&gt;  &lt;/nav&gt;</b> </td>
+             <td>  Section possédant des liens de navigation principaux (au sein du document ou vers d'autres pages)</td>
+              </tr>
+             
+             
+              <tr>
+             <td><b> &lt;aside&gt;  &lt;/aside&gt;</b> </td>
+             <td>  Section dont le contenu est un complément par rapport à cequi l'entoure, qui n'est pas forcément en lien direct avec le contenu mais qui peut apporter des informations supplémentaires.</td>
+              </tr>
+         
+            <tr>
+             <td><b> &lt;footer&gt;  &lt;/footer&gt;</b> </td>
+             <td>Section de conclusion d'une section ou d'un article, voire du document entier (pied de page). </td>
+              </tr>
+             
+             
+              <tr>
+             <td><b> &lt;div&gt;  &lt;/div&gt;</b> </td>
+             <td> définit une division ou une section dans un document HTML. cet élément est souvent utilisé comme conteneur pour d'autres éléments HTML afin de les styler avec CSS ou d'effectuer certaines tâches avec JavaScript.</td>
+              </tr>
+         </table>
+                    
+                    
+                    
+
+                    
+                    <a href="lecon1_html.html"><button class="button button1">Leçon 1</button></a>
+                    <a href="lecon3_html.html"><button class="button button2">Leçon 3</button></a>
+                     
+                    
+                    
+                    
+                    </ul>    
+             
+               </article>
+
+                
+         </section>
+
+
+    </div>
+    
+
+          
+</body>
+
+
+</html>

@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>php - débutant </title>
+    <link rel="stylesheet" href="../css/css/html_debutant.css">
+             <link rel="stylesheet" href="../../css/footer.css">
+	       <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
+
+
+    <style>
+        
+        section article span:hover{
+             color: #4caf50;
+        }
+        section article p {
+            display: block;
+            margin-left: 0;
+            margin-right: 0;    
+            background-color: white;
+            border-radius: 10px;
+            padding: 10px;
+        }
+        dd{
+            padding: 5px;   
+        }
+        dt {
+            width: 12%;
+        padding: 7px 0px 10px 15px;
+        border-radius: 10px;
+            color: white
+        }
+        img {
+            margin-left: 0;
+            margin-right: 0;
+            padding: 20px 50px;
+        }
+     </style>
+
+</head>
+
+<body>
+
+     <header>
+         
+                 <span class="ESchool">   
+                <strong>E</strong>-<span>School</span><span style="color: #4caf50">.com</span>
+                </span>
+         <span style="font-size: 25px;float: right;letter-spacing: 7px;margin-top: 20px;">L'ETS GO TO BE A DEVELOPPER</span>
+           <div class="navbar">      
+
+                     
+
+                    <ul>
+                        <li><a href="../../index.html" class="dropdown-item">HOME</a></li>
+                        <li> <a href="../html/html.html">HTML</a>
+                        </li>
+                    
+                        
+                       <li> <a href="../css/CSS.html"> CSS </a> 
+                          </li>
+
+                       <li> <a href="../javascript/javascript.html"> JAVASCRIPT </a>
+                           </li>
+
+                       <li> <a href="../php/php.html">PHP</a> </li>
+
+                        <li> <a href="#">COOMING SOON</a>   
+                        </li>
+                            
+                        
+                    </ul>
+
+              </div>
+
+     </header>
+
+     <div class="content"  style="background-color: #a9a9a921;margin-top: 0 ">
+         <section style="margin-top: 4%">
+
+                <article>
+                    <a href="#" style="color: #4caf50;margin-top: 10px;"><h1 style="font-size: 50px;">GET &amp; POST</h1></a>
+                <p style="padding: 10px;word-spacing: 2px;">
+                    Le client de navigateur peut envoyer des informations au serveur Web de deux manières.<br>
+                    &#9679; La méthode GET<br>
+                    &#9679; La méthode POST</p><br><br>
+                    
+<h3>La méthode GET: </h3><p>
+La méthode GET envoie les informations utilisateur codées ajoutées à la demande de page.<br>
+La méthode GET génère une longue chaîne qui apparaît dans les journaux de votre serveur, dans la zone Emplacement du navigateur.<br>
+
+La méthode GET est limitée à l'envoi de 1024 caractères seulement.<br>
+
+N'utilisez jamais la méthode GET si un mot de passe ou d'autres informations sensibles doivent être envoyés au serveur.<br>
+
+GET ne peut pas être utilisé pour envoyer des données binaires, telles que des images ou des documents Word, au serveur.<br>
+
+PHP fournit un tableau associatif $ _GET pour accéder à toutes les informations envoyées à l’aide de la méthode GET.<br>
+                    
+<br><br>  <br>
+                    
+<h3>La méthode POST: </h3><p>
+La méthode POST transfère des informations via des en-têtes HTTP. Les informations sont codées comme décrit dans le cas de la méthode GET et placées dans un en-tête appelé QUERY_STRING.<br>
+
+La méthode POST n’a aucune restriction quant à la taille des données à envoyer.<br>
+
+La méthode POST peut être utilisée pour envoyer des fichiers ASCII ainsi que des données binaires.<br>
+
+Les données envoyées par la méthode POST passent par l'en-tête HTTP, de sorte que la sécurité dépend du protocole HTTP. En utilisant HTTP sécurisé, vous pouvez vous assurer que vos informations sont sécurisées.<br>
+
+PHP fournit un tableau associatif $ _POST pour accéder à toutes les informations envoyées à l’aide de la méthode POST.<br>
+<br><br>  <br>
+                    
+<h3>La variable $ _REQUEST: </h3><p>
+La variable PHP $ _REQUEST contient le contenu de $ _GET, $ _POST et $ _COOKIE. Nous discuterons de la variable $ _COOKIE lorsque nous expliquerons les cookies.<br>
+La variable PHP $ _REQUEST peut être utilisée pour obtenir le résultat des données de formulaire envoyées avec les méthodes GET et POST.</p>
+
+<br><br>  
+<h3>Exemple:</h3>    
+    <p><img width="37%" src="css/post.PNG">
+    <img width="43%" src="css/get.PNG">
+        <img style="margin-left: 20%" width="40%" src="css/req.PNG"></p>
+                    <a href="cour4_debut.html"><button class="button button1">Precedent</button></a>
+                    <a href="cour6_debut.html"><button class="button button2">Suivant</button></a>
+                    
+</article>
+
+         </section>
+
+
+    </div>
+    
+    <footer class="footer-d">
+
+			<div class="footer-left">
+
+				<h3>E-<span>School</span></h3>
+
+				<p class="footer-links">
+					<a href="#">Home</a>
+					.
+					<a href="#">Contact</a>
+					·
+					<a href="#">About</a>
+				</p>
+
+				<p class="footer-site-name">E-School &copy; 2018</p>
+			</div>
+
+			<div class="footer-center">
+
+				<div>
+					<i class="fa fa-map-marker"></i>
+					<p><span>Universite Houari Boumediane</span> Babezouar, Alger</p>
+				</div>
+
+				<div>
+					<i class="fa fa-phone"></i>
+					<p>+213 555 123456 / +213 555 123456</p>
+				</div>
+
+				<div>
+					<i class="fa fa-envelope"></i>
+					<p><a href="mailto:support@company.com">E-School@gmail.com</a></p>
+				</div>
+
+			</div>
+
+			<div class="footer-right">
+
+				<p class="information-site">
+					<span>About the company</span>
+					E-School est site d'apprentissage 
+				</p>
+
+				<div class="footer-icons">
+
+					<a href="#"><i class="fa fa-facebook"></i></a>
+					<a href="#"><i class="fa fa-twitter"></i></a>
+					<a href="#"><i class="fa fa-google"></i></a>
+					<a href="#"><i class="fa fa-youtube"></i></a>
+
+				</div>
+
+			</div>
+
+		</footer>
+          
+</body>
+
+
+</html>

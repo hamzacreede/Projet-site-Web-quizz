@@ -1,0 +1,234 @@
+body{
+    margin: 0;
+}
+/*  *** navbar **  */
+.ESchool{
+    font-size: 50px;
+    color: dimgray;
+}
+.ESchool:hover{
+    color: #4caf50;
+}
+
+
+header .navbar {
+
+    margin-top: 15px ;
+
+    margin-left: -8px;
+
+    margin-right: -8px;
+  
+ }
+  
+   header .navbar ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+
+      height: 50px; 
+      background-color: #333; 
+  }
+  
+  header .navbar li {
+      float: left;
+      padding:5px ; 
+  }
+  
+  header .navbar li a {
+      
+      color: white;
+      text-align: center;
+      padding: 17px 16px;
+      text-decoration: none;
+      font-family:  Georgia, 'Times New Roman', Times, serif,'Lucida Sans Regular' ;              
+      font-size: 25px;
+      
+  
+  }
+  
+  header .navbar li a:hover {
+      background-color: #87c98a;
+      color: black;
+  }
+
+  /* END navbar */
+
+body {
+    font-size: 20;
+}
+  /**** begin content ****** */ 
+
+
+   .content{
+            display: flex ;
+            margin-top: 5% ;
+        }
+
+        nav ul {
+            margin-left: -8px;
+            margin-top: -67px;
+            
+               list-style-type: none;
+
+               background-color: #f1f1f1;
+
+              /* position: fixed; */
+
+
+              width: 200px;
+
+              padding: 0 ;
+
+
+           }
+
+        nav li a {
+            display: block;
+            color: #000;
+            padding: 6px 16px;
+            text-decoration: none;
+        }
+
+       nav li a.active {
+           background-color: #4CAF50;
+           color: white;
+       }
+       
+       nav li a:hover:not(.active) {
+           background-color: #555;
+           color: white;
+       }
+
+
+
+
+
+       /* article et aside */
+        
+         section {
+
+             margin-left:5%;
+                       
+             height:100%;     
+             
+             display: flex;
+
+         }
+
+         /* article */
+
+         section article{
+             margin-top: -60px;
+             max-width: 95% ;
+         } 
+
+
+         /* aside */
+         
+         section aside ul{
+
+              list-style-type: none;
+
+              background-color: #f1f1f1;
+      
+              overflow: auto;
+
+              width: 200px;
+
+              padding: 0 ;
+
+
+         }
+
+          section li a {
+
+            display: block;
+            color: #000;
+            padding: 8px 16px;
+            text-decoration: none;
+
+           }
+
+           section li a.active {
+               background-color: rgb(175, 76, 76);
+               color: white;
+           }
+       
+           section li a:hover:not(.active) {
+               background-color: #555;
+               color: white;
+           }
+   
+      div.e1 {
+    width:500px;
+    margin: auto;
+    border: 3px solid #73AD21;
+}
+
+#tab{
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+#tab td, #tab th {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+#tab tr:nth-child(even){background-color: #f2f2f2;}
+
+#tab tr:hover {background-color: #ddd;}
+
+#tab th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #4CAF50;
+    color: white;
+}
+
+
+
+.button{
+  background-color: #4CAF50; /* Green */
+  border-radius:20px;
+  color: white;
+  padding: 16px 32px;
+  text-align: center;
+  display: inline-block;
+  font-size: 16px;
+  margin: 20px 2px;
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+.button1 {
+  background-color: white; 
+  color: black; 
+  border: 2px solid #008CBA;
+    margin-left: 40%;
+}
+
+.button1:hover {
+  background-color: #008CBA;
+  color: white;
+}
+
+.button2 {
+  background-color: white; 
+  color: black; 
+  border: 2px solid green;
+}
+
+.button2:hover {
+  background-color: green;
+  color: white;
+}
+
+
+
+
+

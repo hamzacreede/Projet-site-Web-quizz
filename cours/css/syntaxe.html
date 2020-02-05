@@ -1,0 +1,226 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+
+    <meta charset="utf-8">
+
+    <title>html - débutant </title>
+
+    <link rel="stylesheet" href="css/html_debutant.css">
+
+    <style>
+
+       
+     </style>
+
+</head>
+
+<body>
+
+     <header>
+         
+                 <span class="ESchool">   
+                <strong>E</strong>-<span>School</span><span style="color: #4caf50">.com</span>
+                </span>
+         <span style="font-size: 25px;float: right;letter-spacing: 7px;margin-top: 20px;">L'ETS GO TO BE A DEVELOPPER</span>
+                           <div class="navbar">      
+
+                     
+
+                    <ul>
+                        <li><a href="../../index.html" class="dropdown-item">HOME</a></li>
+                        <li> <a href="../html/html.html">HTML</a>
+                        </li>
+                    
+                        
+                       <li> <a href="../css/CSS.html"> CSS </a> 
+                          </li>
+
+                       <li> <a href="../javascript/javascript.html"> JAVASCRIPT </a>
+                           </li>
+
+                       <li> <a href="../php/php.html">PHP</a> </li>
+
+                        <li> <a href="#">COOMING SOON</a>   
+                        </li>
+                            
+                        
+                    </ul>
+
+              </div>
+
+     </header>
+
+     <div class="content">
+
+        <!-- Liste des cours -->
+
+           <nav>
+       
+               <ul> 
+                   <li style="margin-left: 10px;padding-top: 10px;"><h2>CSS Menu</h2></li>
+    
+                <li><a href="../html/debutant.html">Introduction CSS</a></li>
+    
+                <li><a href="../css/debutant.html" class="active">Syntaxe CSS</a></li>
+    
+                <li><a href="../php/debutant.html">PHP</a></li>
+    
+                <li><a href="../javascript/debutant.html">javascript</a></li>
+                   
+                <li><a href="../html/debutant.html">html</a></li>
+    
+                <li><a href="../css/debutant.html">css</a></li>
+    
+                <li><a href="../php/debutant.html">PHP</a></li>
+    
+                <li><a href="../javascript/debutant.html">javascript</a></li>
+        <li><a href="../html/debutant.html">html</a></li>
+    
+                <li><a href="../css/debutant.html">css</a></li>
+    
+                <li><a href="../php/debutant.html">PHP</a></li>
+    
+                <li><a href="../javascript/debutant.html">javascript</a></li>
+        <li><a href="../html/debutant.html">html</a></li>
+    
+                <li><a href="../css/debutant.html">css</a></li>
+    
+                <li><a href="../php/debutant.html">PHP</a></li>
+    
+                <li><a href="../javascript/debutant.html">javascript</a></li>
+        <li><a href="../html/debutant.html">html</a></li>
+    
+                <li><a href="../css/debutant.html">css</a></li>
+    
+                <li><a href="../php/debutant.html">PHP</a></li>
+    
+                <li><a href="../javascript/debutant.html">javascript</a></li>
+        <li><a href="../html/debutant.html">html</a></li>
+    
+                <li><a href="../css/debutant.html">css</a></li>
+    
+                <li><a href="../php/debutant.html">PHP</a></li>
+    
+                <li><a href="../javascript/debutant.html">javascript</a></li>
+        
+              </ul>
+          
+          
+           </nav>
+
+      
+           <section>
+
+                <article>
+                    <a href="#" style="color: #4caf50;margin-top: 10px;"><h1 style="font-size: 50px;">Syntaxe CSS</h1></a>
+                    
+                    <p>Après avoir passé toute une première partie du cours à ne travailler que sur le HTML, nous allons maintenant découvrir le CSS . Le CSS n'est pas plus compliqué que le HTML. Il vient le compléter pour vous aider à mettre en forme votre page web.</p>  
+                    <br>
+                    
+                    <img src="selector.gif" style="width:100%;height:20%;">  
+                    <ul>
+                        <li>Un sélecteur détermine à quel élément un style doit être appliqué</li>
+                        <li>Une propriété détermine le style qui va être appliqué un élément</li>
+                        <li>Une valeur determine le comportement d'une propriété</li>
+                    </ul>
+                    
+                    <br>
+                    <br>
+<p>                    
+<b><h3>Où ECRIRE le CSS ? </h3></b>
+• Nous avons le choix:  Il ya 3 possibilités : 
+<br> 
+1- Dans llet head du document HTML<br>  
+2- Dans les balises ouvrante du fichier HTML via un attribut style.<br> 
+3- Dans un fichier CSS séparé.<strong> Il est recomader d'utiliser la derniére methode</strong>.<br>  
+• Pour lier un fichier HTML avec un fichier CSS, on écrit :
+<br><p style="color: white">xxxxxxxxxxxxxxxxxx</p>
+<div class="e1" style="text-align: center"><b> &lt; link  rel=stylesheet  href =fichies.css/&gt; </b></div>
+<br>
+
+<p><b>• Sélectionner une balise :</b><br>   
+Il sagit de la selectio la plus simple, puisque le slecteur est constitué du nom de la balise sans le début &lt; et de fin  /&gt; 
+</p>
+<img src="css/ex1.jpg"  height="100px" width="100%">
+
+<p><b>• Sélectionner plusieurs  balises :</b><br> 
+                    
+Il sagit dappliquer le meme style à plusieus balises diffetes en les énumérant et en les séparant par une virgule dans le sélecteur.                      
+</p>
+                    
+<img src="css/ex2.jpg" height="100px"  width="100%"><br>
+ <p>Cette possibilité de regroupement peut être utile pour définir des styles communs à un ensembles de balises</p> 
+                    
+<p><b>• Sélecteur universel :</b><br>
+      • Pour appliquer  un style  à toutes les balises , on utilise le sélecteur universel <br>
+    Exemple:<br>
+    pour que la couleur du fond de tous les éléments soit le jaune: <b>*{background-color:yellow} </b>
+</p>
+<img src="css/ex3.jpg" height="250px" width="50%" style="float: right ;border-color: blue" border="1px">
+<img src="css/ex3-1.jpg" height="150px" width="45%" style="float:left ;border-color: blue" border="1px" ><br>
+<b style="color: white">aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaassssssss</b>
+<b><h2>Résultat d'execution:</h2></b><br>
+        
+<img src="css/ex3-2.jpg" height="200px" width="45%" style="float:inherit">
+
+<h2><b><p>Définir <big>Class</big>  et <big> id </big>:</p></b></h2>
+<p>Tout ce qu'on a vu jusqu'à present implique par exemple que tous les paragraphes possèdent la même présentation. <br><br>
+ 
+<b>Comment faire pour que cetains paragraphes  seulement soiet ecrits d'une manière différente?</b><br><br>
+ 
+Pour répondre à la question, on peut utiliser deux (02) attributs spéciaux qui fonctionnent sure toutes les balises: <br>
+ 
+•  Lattribut class et L'attribut id ces attributs permettent d'appliquer différents styles a des balises de meme type .<br></p>
+
+<table id="tab">
+                    
+<tr>
+<td style="text-align: center">  <b > ID (identifiant) </b> </td>
+<td> • Il fonctionne exactement de la même manière que « class », il ne peut etre utilis qu'une seule fois dans l'ordre.<br> 
+   • Il concerne les éléments uniques de structuration du document, comme les blocs principaux (logo, en-tête, colonne(s), pied de page...). <br>
+  • Il est spécifié en CSS par un dièse (#) : <b>#nom_id { propriété:valeur; }</b>  </td>
+</tr> 
+    
+<tr>
+<td style="text-align: center">  <b > class </b> </td>
+<td>• l'attribut class peut se mettre sur n'importe quelle balise, aussi bien titre,paragraphe, image, etc… <br>
+• Permet d'appliqué un style à une classe definie de balises.<br> 
+ 
+• Pour créer une classe, le sélecteur est constitué du nom choisi pour la classe pd du poit.                                           <br> Exemple : <b> .nom_class { propriété:valeur;}</b>   
+</td>
+</tr>     
+    
+</table>                    
+ <h2><b><p>exemple:</p></b></h2>
+<img src="css/ss.jpg" width="100%" height="300px"><br>
+<b><p>Résultat de l'éxécution:</p></b><br>
+<img src="css/ss1.jpg"  height="200px">
+                    
+                    
+</article>
+
+                 <!--<aside>
+
+                        <ul>
+                         
+                                <li> <a href="debutant.html" class="active">Niveau Débutant</a> </li>
+                                 
+                            
+         
+                                <li> <a href="avance.html"> Niveau Avancé </a> </li>                        
+         
+                        </ul>
+
+                 </aside>-->
+                
+         </section>
+
+
+    </div>
+          
+</body>
+
+
+</html>

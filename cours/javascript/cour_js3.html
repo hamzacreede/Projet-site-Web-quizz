@@ -1,0 +1,225 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+
+    <meta charset="utf-8">
+
+    <title>javascript - débutant </title>
+
+    <link rel="stylesheet" href="css/debutant_css.css">
+        <link rel="stylesheet" href="css/button.css">
+   
+    <link rel="stylesheet" href="css/html_debutant.css">
+    
+             <link rel="stylesheet" href="../../css/footer.css">
+	       <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
+
+    <style>
+        body{
+            
+            font-family: cursive;
+            
+            
+        }
+        
+        
+        
+        titre{
+            font-size: 20px;
+            color: crimson;
+        
+            
+            
+            
+        }
+        
+         .card {
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  width: 40%;
+           border-radius: 15px;
+           display: inline-block;
+}
+
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    
+}
+        .card h1{
+            text-align: center; 
+        }
+        
+        
+          section article p {
+            background-color: white;
+            border-radius: 10px;
+            padding: 10px;
+            font-size: 18;  
+             font-family: cursive; 
+              
+        }
+        
+        
+        
+            section article p ul {
+            background-color: crimson;
+            border-radius: 10px;
+            padding: 10px;
+            font-size: 18;  
+             font-family: cursive; 
+              
+        }
+        
+        
+        
+        
+        span {
+             color: #4caf50;
+        }
+        h2{
+            margin-top: 10%;
+            margin-left: 20%;
+        }
+     </style>
+
+</head>
+
+<body style="background-color: #a9a9a921;margin-top: 0 ">
+
+     <header style="background-color: white">
+         
+                 <span class="ESchool">   
+                <strong>E</strong>-<span>School</span><span style="color: #4caf50">.com</span>
+                </span>
+         <span style="font-size: 25px;float: right;letter-spacing: 7px;margin-top: 20px;">L'ETS GO TO BE A DEVELOPPER</span>
+                    <div class="navbar">      
+
+                     
+
+                    <ul>
+                        <li><a href="../../index.html" class="dropdown-item">HOME</a></li>
+                        <li> <a href="../html/html.html">HTML</a>
+                        </li>
+                    
+                        
+                       <li> <a href="../css/CSS.html"> CSS </a> 
+                          </li>
+
+                       <li> <a href="../javascript/javascript.html"> JAVASCRIPT </a>
+                           </li>
+
+                       <li> <a href="../php/php.html">PHP</a> </li>
+
+                        <li> <a href="#">COOMING SOON</a>   
+                        </li>
+                            
+                        
+                    </ul>
+
+              </div>
+
+     </header>
+
+     <div class="content" style="margin-top: 0px">
+       
+          <section style="margin-top: 4%; margin-left: 10%">
+
+                <article>
+                    <a href="#" style="color: #4caf50;margin-top: 10px;"><h3 style="font-size: 50px;">Apprendre javaScript</h3>
+                    </a>
+          <h3 style="color: rgb(4, 0, 255)">seconde partie JAVASCRIPT</h3>
+                    
+
+                    
+                   
+              
+<title><u>Présentation des variables JavaScript</u></title>
+                    <p>
+Une variable JavaScript est un conteneur servant à stocker temporairement une information, comme un nombre ou une chaîne de caractères (c’est-à-dire un texte) par exemple.
+
+Comme son nom l’indique, le propre d’une variable est de pouvoir varier, c’est-à-dire de pouvoir stocker différentes valeurs dans le temps, en « écrasant » sa valeur précédente.
+
+En JavaScript, on déclare une variable avec le mot clef « var » suivi du nom de notre variable. Chaque nouvelle variable doit avoir un nom unique qu’on appelle également en anglais « identifier ».      
+                     
+                    </p>
+                    
+
+                    
+    <titre><u>Le nom des variables en JavaScript</u></titre><br><br>
+                    
+On doit observer différentes règles lorsque l’on nomme une variable en JavaScript :
+
+Le nom des variables doit commencer par une lettre ;
+Le nom ne peut contenir que des lettres (non accentuées), des chiffres ou les signes « _ » et « $ » ;
+Le nom des variables est sensible à la casse (« a » est différent de « A ») ;
+Le JavaScript possède des mots « réservés » qu’on ne peut utiliser pour créer une variable. Nous verrons ces mots au fil de ce cours. Par exemple, le mot « var » est un mot réservé. 
+    <titre><u>Déclarer une variable en JavaScript</u></titre><br>                    
+<p>
+Il existe différentes façons de déclarer une variable en JavaScript. On va pouvoir :<br>
+
+1- Déclarer une variable et lui assigner une valeur immédiatement ;<br>
+2- Déclarer une variable sans lui assigner de valeur et lui assigner une valeur plus tard ;<br>
+3- Déclarer plusieurs variables en même temps.                    
+</p>                    
+                    
+  <span>Voyons immédiatement un premier exemple ensemble :</span>              
+                    <br><br>
+                    
+<img src="css/presentation-variables-javascript.png" style="margin-left: 20%">                    
+     <br><br>
+                    
+                    
+    <titre><u>  Des opérations mathématiques simples sur les variables</u></titre><br>                    
+
+Le grand avantage des variables est avant tout que l’on va pouvoir les manipuler et notamment effectuer des opérations entre variables.
+
+Pour des variables stockant des valeurs de type Number, on va donc pouvoir effectuer les mêmes opérations qu’avec des nombres en mathématiques.
+
+Ainsi, nous allons pouvoir additionner (les valeurs de) deux variables entre elles, les soustraire l’une à l’autre, les multiplier entre elles, etc.
+
+Voyons immédiatement quelques exemples avec des calculs simples : 
+                    
+                               <br><br>
+                    
+<img src="css/operations-variables-javascript.png" style="margin-left: 20%">                    
+     <br><br>         
+                    
+    <span style="color: red">Le modulo correspond au reste de la division entière d’un nombre par un autre. On utilise le signe « % » pour le calculer</span>                
+              
+      <h4> Priorités de calcul</h4>
+    <p style="background-color: deeppink">                
+Faites attention à respecter les priorités de calcul lorsque vous effectuez des opérations sur les variables.
+</p>
+ 
+<p>                    
+En réalité, c’est très simple puisque ce sont les mêmes qu’en mathématiques : les parenthèses sont prioritaires sur toute autre opération, puis viennent la multiplication, la division et le modulo et finalement l’addition et la soustraction.             
+ </p>                   
+                         
+                               <br><br>
+                    
+<img src="css/priorites-calcul-javascript.png" style="margin-left: 20%">  
+                    
+                    
+     <br><br>    
+                    
+    <img src="css/priorites-calcul-javascript-resultat.png" style="margin-left: 20%">                  
+                    
+                    
+                    
+             
+                      <a href="cour_js2.html"><button class="button button1">Leçon 2</button></a>  
+                    <a href="cour_js4.html"><button class="button button2">Leçon 4</button></a>   
+                    
+             
+         </article>
+
+
+    </section>
+    
+    </div>
+          
+</body>
+
+
+</html>
